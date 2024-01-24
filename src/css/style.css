@@ -1,0 +1,285 @@
+/*------------Header----------------*/
+.header__container-large{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    background: linear-gradient(to right bottom, #ff6b6b, #ff8787);
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    box-shadow: rgba(212, 92, 92, 0.54) 0px 20px 30px -10px;
+}
+
+.header{
+    font-family: 'Sevillana', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*-------------------Hero---------------------*/
+.hero__container-medium{
+    display: grid;
+    grid-template-columns:5fr 6fr;
+    gap: 5rem;
+    margin-bottom: 15rem;
+}
+.hero-pictures-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+.hero-picture{
+    max-height: 34rem;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+.hero-picture:nth-child(1),.hero-picture:nth-child(2){
+    align-self: end;
+}
+.hero-picture img{
+    transition: all 0.5s;
+}
+
+.hero-picture img:hover{
+    transform: scale(1.1);
+}
+
+.hero-title{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 7rem;
+}
+.hero-text-block{
+    background-color: #f8f9fa;
+    padding: 5rem;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 10rem;
+}
+.hero-text{
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #f1f3f5;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.hero-text:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+/*-------------Toppings--------------------*/
+.toppings__container{
+    background: linear-gradient(to right bottom, rgb(255, 107, 107), rgb(255, 135, 135));
+    padding: 6rem 0;
+    margin-bottom : 12rem ;
+    box-shadow: rgba(255, 107, 107, 0.56) 0px 10px 50px;
+}
+.toppings-header{
+    font-family: 'Sevillana', cursive;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    color: #fff;
+    margin-bottom: 6rem;
+    font-weight: 700;
+}
+.toppings-block{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.topping {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+}
+.topping .effect-to-top h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.toppings-block li div.effect-to-top {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, 250px) ;
+}
+.toppings-block li:hover div.effect-to-top {
+    opacity: 1;
+    transform: translate(0px, 0px) ;
+}
+
+/*--------------Samples-----------------*/
+.samples__container-medium{
+    margin-bottom: 15rem;
+}
+.samples-title{
+    text-align: center;
+    font-family: 'Sevillana', cursive;
+    font-size: 5rem;
+    color: #ff8787;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10rem;
+}
+.samples-block{
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr ;
+
+}
+.sample{
+    max-width: 40rem;
+    padding: 2rem 3rem;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    transition: all 0.3s;
+}
+.sample:hover{
+    box-shadow: rgba(0, 0, 0, 0.42) 0px 18px 50px -10px;
+}
+.sample-picture-block{
+    max-width: 40rem;
+    overflow: hidden;
+    max-height: 30rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.sample-text-block{
+    background: linear-gradient(to right bottom, #ff6b6b, #ff8787);
+    padding: 2rem 4rem;
+    border-radius: 15px;
+}
+.sample-name{
+    font-size: 2.2rem;
+    color: #ff6b6b;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sample-text{
+    font-size:1.8rem;
+    line-height: 1.3;
+    color: #fff;
+    letter-spacing: 1.3px;
+}
+
+/* ---------------------Testimonials------------------------ */
+.testimonials__container-large{
+    margin-bottom: 15rem;
+}
+.testimonials-title{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Sevillana', cursive;
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.testimonial {
+    flex: 0 0 50%;
+    padding: 3rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+    box-shadow: inset 0 0 0 0.2rem rgba(255, 107, 107, 0.47);
+    max-width: 40rem;
+}
+.testimonial:not(:last-child) {
+    margin-right: 2rem;
+}
+.testimonial-title {
+    color: #ff6b6b;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.testimonial-text {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.testimonial-author {
+    color: #ff6b6b;
+    position: relative;
+    font-size: 1.2rem;
+}
+/*-----------Contacts-------------*/
+.cta__container-medium{
+    font-size: 2.5rem;
+    margin-bottom: 15rem;
+    letter-spacing: 1.5px;
+}
+.cta{
+    background: linear-gradient(to right bottom, rgb(255, 107, 107), rgb(255, 135, 135));
+    display: grid;
+    padding: 4rem 5rem;
+    border-radius: 60px;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cta-text-block{
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cta-title{
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+.cta-text{
+    color: #fff;
+}
+.cta-text:not(:last-child){
+margin-bottom: 3rem;
+}
+.cta-picture{
+    height: 100%;
+}
+.cta-picture-block{
+    border-radius: 40px;
+    overflow: hidden;
+    justify-self: end;
+}
+
+.cta-link:link, .cta-link:visited,.cta-link:active,.cta-link:hover{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*----------Footer------------*/
+.footer{
+    background: linear-gradient(to right bottom, rgb(255, 107, 107), rgb(255, 135, 135));
+    padding: 4rem 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
