@@ -20,22 +20,27 @@
 .hero__container-medium{
     display: grid;
     grid-template-columns:5fr 6fr;
-    gap: 5rem;
     margin-bottom: 15rem;
+    gap: 15rem;
 }
 .hero-pictures-block{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 25px;
 }
 .hero-picture{
-    max-height: 34rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 35rem;
     border-radius: 30px;
     overflow: hidden;
-
-}
-.hero-picture:nth-child(1),.hero-picture:nth-child(2){
-    align-self: end;
+    border: 1rem #f1f3f5 solid;
+    align-self: center;
+    justify-self: center;
 }
 .hero-picture img{
     transition: all 0.5s;
@@ -55,7 +60,6 @@
     padding: 5rem;
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin-right: 10rem;
 }
 .hero-text{
     font-size: 2rem;
@@ -70,7 +74,7 @@
 
 /*-------------Toppings--------------------*/
 .toppings__container{
-    background: linear-gradient(to right bottom, rgb(255, 107, 107), rgb(255, 135, 135));
+    background: #ff6b6b;
     padding: 6rem 0;
     margin-bottom : 12rem ;
     box-shadow: rgba(255, 107, 107, 0.56) 0px 10px 50px;
@@ -85,10 +89,16 @@
     font-weight: 700;
 }
 .toppings-block{
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
     gap: 3rem;
     list-style: none;
     justify-content: center;
+    background-color: #ff8787;
+    padding: 5rem 6rem;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 25px;
 }
 
 .topping {
@@ -148,7 +158,7 @@
 .samples-block{
     display: grid;
     grid-template-columns : 1fr 1fr 1fr ;
-
+    gap: 2rem;
 }
 .sample{
     max-width: 40rem;
@@ -157,6 +167,7 @@
     border-radius: 20px;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     transition: all 0.3s;
+    justify-self: center;
 }
 .sample:hover{
     box-shadow: rgba(0, 0, 0, 0.42) 0px 18px 50px -10px;
@@ -192,7 +203,7 @@
 }
 
 /* ---------------------Testimonials------------------------ */
-.testimonials__container-large{
+.testimonials__container-medium{
     margin-bottom: 15rem;
 }
 .testimonials-title{
@@ -203,32 +214,58 @@
     text-align: center;
     margin-bottom: 5rem;
 }
-.testimonial {
-    flex: 0 0 50%;
-    padding: 3rem;
-    border-radius: 1rem;
-    transition: all 0.5s;
-    box-shadow: inset 0 0 0 0.2rem rgba(255, 107, 107, 0.47);
-    max-width: 40rem;
+.testimonials-text-block{
+    max-width: 60rem;
+    background-color: #f8f9fa;
+    padding: 5rem 7rem;
+    border-radius: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.testimonial:not(:last-child) {
-    margin-right: 2rem;
+
+.testimonials-content{
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+}
+.testimonials-text{
+    font-size: 3rem;
+    line-height: 1.3;
+    background-color: #f1f3f5;
+    padding: 2rem 5rem;
+    border-radius: 15px;
+
+}
+.slider{
+    max-width: 70rem;
+}
+.testimonial {
+    max-width: 70rem;
+    padding: 4rem 7rem;
+    background-color: #f8f9fa;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    margin: 2rem;
+    transition: all 0.3s;
 }
 .testimonial-title {
     color: #ff6b6b;
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 .testimonial-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.4;
     margin-bottom: 2rem;
+    background-color: #f1f3f5;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    transform: translateX(-1rem);
 }
 
 .testimonial-author {
     color: #ff6b6b;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 /*-----------Contacts-------------*/
 .cta__container-medium{
@@ -242,6 +279,7 @@
     padding: 4rem 5rem;
     border-radius: 60px;
     grid-template-columns: 3fr 1fr;
+    box-shadow: rgba(255, 107, 107, 0.54) 0px 5px 15px;
 }
 
 .cta-text-block{
@@ -249,6 +287,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #ff8787;
+    padding: 2rem 4rem;
+    border-radius: 30px;
 }
 .cta-title{
     color: #fff;
@@ -259,10 +300,12 @@
     color: #fff;
 }
 .cta-text:not(:last-child){
-margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 .cta-picture{
-    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .cta-picture-block{
     border-radius: 40px;

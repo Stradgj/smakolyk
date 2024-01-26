@@ -1,0 +1,79 @@
+
+@media (max-width: 110em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+@media (max-width: 102em) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 90em) {
+    html {
+        font-size: 45%;
+    }
+    .hero__container-medium{
+        gap: 10rem;
+    }
+}
+@media (max-width: 90em) {
+    html {
+        font-size: 40%;
+    }
+
+}
+@media (max-width: 75em) {
+    .toppings-block{
+        grid-template-columns:repeat(2, 1fr) ;
+        width: 60%;
+    }
+    .topping{
+        justify-self: center;
+
+    }
+
+    .samples-block{
+        display: grid;
+        grid-template-columns : 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 5rem;
+    }
+    .sample:last-child{
+        grid-column: span 2;
+    }
+    .testimonials-content{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .hero__container-medium{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 55em){
+    html{
+        font-size: 35%;
+    }
+    .samples-block{
+        grid-template-columns : 1fr;
+    }
+    .sample:last-child{
+        grid-column: span 1;
+    }
+    .cta-picture{
+        display: none;
+
+    }
+    .cta{
+        grid-template-columns: 1fr;
+    }
+    .cta-text-block{
+        margin-right: 0;
+    }
+    .toppings-block{
+        background-color: #ff6b6b;
+    }
+    .testimonial{
+        max-width: 45rem;
+    }
+}
