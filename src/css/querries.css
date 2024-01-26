@@ -51,6 +51,10 @@
     }
 }
 @media (max-width: 55em){
+    html {
+        font-size: 35%;
+    }
+
     .samples-block{
         grid-template-columns : 1fr;
     }
@@ -71,7 +75,11 @@
     .toppings-block{
         background-color: #ff6b6b;
     }
+
     .testimonial{
-        box-shadow: none;
+        padding: 2rem 3rem;
+    }
+    .testimonial-text{
+        transform:translateX(0px);
     }
 }
