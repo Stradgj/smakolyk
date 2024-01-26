@@ -167,7 +167,10 @@ function TestimonialSlider() {
         fade: true,
         pauseOnFocus:true,
         pauseOnHover: true,
-        centerPadding: "0px"
+        centerPadding: "10px",
+        arrows: false,
+        dots: true,
+        accessibility: false
     };
     return (
         <Slider {...settings}>

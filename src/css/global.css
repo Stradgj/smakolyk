@@ -42,12 +42,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(255, 135, 135, 0.56);
+}
 html{
   font-size: 62.5%;
 }
 body{
   font-family: 'Roboto', sans-serif;
-  color: #212529;;
+  color: #212529;
+  overflow-x: hidden;
 }
 [class*="__container"]{
   margin: 0 auto;

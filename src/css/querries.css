@@ -51,9 +51,6 @@
     }
 }
 @media (max-width: 55em){
-    html{
-        font-size: 35%;
-    }
     .samples-block{
         grid-template-columns : 1fr;
     }
@@ -65,6 +62,7 @@
 
     }
     .cta{
+        padding: 4rem;
         grid-template-columns: 1fr;
     }
     .cta-text-block{
@@ -74,6 +72,6 @@
         background-color: #ff6b6b;
     }
     .testimonial{
-        max-width: 45rem;
+        box-shadow: none;
     }
 }
